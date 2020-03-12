@@ -1,0 +1,6 @@
+framework module Pods_LetterML {
+  umbrella header "Pods-LetterML-umbrella.h"
+
+  export *
+  module * { export * }
+}

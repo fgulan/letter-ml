@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19527D1930524DF19800766A /* Pods_LetterML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83C57C20659F0E2FB44FC47 /* Pods_LetterML.framework */; };
+		2C017BD31F7506D400127E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017BD21F7506D400127E8D /* AppDelegate.swift */; };
+		2C017BD81F7506D400127E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C017BD61F7506D400127E8D /* Main.storyboard */; };
+		2C017BDA1F7506D400127E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C017BD91F7506D400127E8D /* Assets.xcassets */; };
+		2C017BDD1F7506D400127E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C017BDB1F7506D400127E8D /* LaunchScreen.storyboard */; };
+		2C017C0C1F75093800127E8D /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C0B1F75093800127E8D /* DrawViewController.swift */; };
+		2C017C111F75097000127E8D /* LetterRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C101F75097000127E8D /* LetterRecognizer.swift */; };
+		2C017C141F750A4300127E8D /* UIImage+Preprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C131F750A4300127E8D /* UIImage+Preprocess.swift */; };
+		2C017C171F750E8F00127E8D /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C161F750E8F00127E8D /* CanvasView.swift */; };
+		2CA07A791F78DFCB0057D31C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA07A781F78DFCB0057D31C /* KeyboardViewController.swift */; };
+		2CA07A7E1F78DFCB0057D31C /* SmartKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CA07A761F78DFCB0057D31C /* SmartKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CA07A831F78E0E40057D31C /* SmartKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA07A821F78E0E40057D31C /* SmartKeyboard.xib */; };
+		2CA07A841F78E1400057D31C /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C161F750E8F00127E8D /* CanvasView.swift */; };
+		2CA07A851F78ECE80057D31C /* UIView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3E43F1F7531D400841FB3 /* UIView+Image.swift */; };
+		2CA07A871F78ED9F0057D31C /* SmartKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA07A861F78ED9F0057D31C /* SmartKeyboard.swift */; };
+		2CA07A891F78EEAA0057D31C /* LetterRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C101F75097000127E8D /* LetterRecognizer.swift */; };
+		2CA07A8A1F78EECF0057D31C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3E43D1F752C8B00841FB3 /* Result.swift */; };
+		2CA07A8B1F78EF4E0057D31C /* UIImage+Preprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C131F750A4300127E8D /* UIImage+Preprocess.swift */; };
+		2CB7118F1F791DE3003B6E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C017BD91F7506D400127E8D /* Assets.xcassets */; };
+		2CD1EC971F7ABE70000ADA2C /* LetterClass_image.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C001F75073C00127E8D /* LetterClass_image.mlmodel */; };
+		2CD1EC981F7ABE71000ADA2C /* LetterClass_image.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C017C001F75073C00127E8D /* LetterClass_image.mlmodel */; };
+		2CDCDB3B1F80DC0000831ECE /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCDB3A1F80DC0000831ECE /* Debouncer.swift */; };
+		2CDCDB3C1F80DC0000831ECE /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCDB3A1F80DC0000831ECE /* Debouncer.swift */; };
+		2CDCDB3E1F80DC2D00831ECE /* UIBezierPath+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCDB3D1F80DC2D00831ECE /* UIBezierPath+Scale.swift */; };
+		2CDCDB3F1F80DC2D00831ECE /* UIBezierPath+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCDB3D1F80DC2D00831ECE /* UIBezierPath+Scale.swift */; };
+		2CF3E43E1F752C8B00841FB3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3E43D1F752C8B00841FB3 /* Result.swift */; };
+		2CF3E4401F7531D400841FB3 /* UIView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3E43F1F7531D400841FB3 /* UIView+Image.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CA07A7B1F78DFCB0057D31C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C017BC71F7506D400127E8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA07A751F78DFCB0057D31C;
+			remoteInfo = SmartKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CA07A7D1F78DFCB0057D31C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CA07A7E1F78DFCB0057D31C /* SmartKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		046E2B751440BB08A79238F9 /* Pods-LetterML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterML.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetterML/Pods-LetterML.release.xcconfig"; sourceTree = "<group>"; };
+		2C017BCF1F7506D400127E8D /* LetterML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetterML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C017BD21F7506D400127E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C017BD71F7506D400127E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C017BD91F7506D400127E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C017BDC1F7506D400127E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C017BDE1F7506D400127E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C017C001F75073C00127E8D /* LetterClass_image.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LetterClass_image.mlmodel; sourceTree = "<group>"; };
+		2C017C0B1F75093800127E8D /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		2C017C101F75097000127E8D /* LetterRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterRecognizer.swift; sourceTree = "<group>"; };
+		2C017C131F750A4300127E8D /* UIImage+Preprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Preprocess.swift"; sourceTree = "<group>"; };
+		2C017C161F750E8F00127E8D /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		2CA07A761F78DFCB0057D31C /* SmartKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmartKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA07A781F78DFCB0057D31C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		2CA07A7A1F78DFCB0057D31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA07A821F78E0E40057D31C /* SmartKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartKeyboard.xib; sourceTree = "<group>"; };
+		2CA07A861F78ED9F0057D31C /* SmartKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartKeyboard.swift; sourceTree = "<group>"; };
+		2CDCDB3A1F80DC0000831ECE /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		2CDCDB3D1F80DC2D00831ECE /* UIBezierPath+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Scale.swift"; sourceTree = "<group>"; };
+		2CF3E43D1F752C8B00841FB3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2CF3E43F1F7531D400841FB3 /* UIView+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Image.swift"; sourceTree = "<group>"; };
+		3F5631E77E59B7C1ED502E2C /* Pods-LetterML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetterML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetterML/Pods-LetterML.debug.xcconfig"; sourceTree = "<group>"; };
+		E83C57C20659F0E2FB44FC47 /* Pods_LetterML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetterML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C017BCC1F7506D400127E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19527D1930524DF19800766A /* Pods_LetterML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA07A731F78DFCB0057D31C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16DB98C57FC918A4DB6CDAA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83C57C20659F0E2FB44FC47 /* Pods_LetterML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AFE1B0F7A57FD4CDC1AF2EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F5631E77E59B7C1ED502E2C /* Pods-LetterML.debug.xcconfig */,
+				046E2B751440BB08A79238F9 /* Pods-LetterML.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C017BC61F7506D400127E8D = {
+			isa = PBXGroup;
+			children = (
+				2C017BD11F7506D400127E8D /* LetterML */,
+				2CA07A771F78DFCB0057D31C /* SmartKeyboard */,
+				2C017BD01F7506D400127E8D /* Products */,
+				1AFE1B0F7A57FD4CDC1AF2EF /* Pods */,
+				16DB98C57FC918A4DB6CDAA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C017BD01F7506D400127E8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C017BCF1F7506D400127E8D /* LetterML.app */,
+				2CA07A761F78DFCB0057D31C /* SmartKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C017BD11F7506D400127E8D /* LetterML */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C151F750E8100127E8D /* Views */,
+				2C017C121F750A2400127E8D /* Extensions */,
+				2C017C0F1F75095700127E8D /* Utility */,
+				2C017C051F7507AF00127E8D /* Modules */,
+				2C017C041F75077B00127E8D /* Resources */,
+				2C017C031F75076B00127E8D /* Application */,
+				2C017C021F75075D00127E8D /* Models */,
+			);
+			path = LetterML;
+			sourceTree = "<group>";
+		};
+		2C017C021F75075D00127E8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C001F75073C00127E8D /* LetterClass_image.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C017C031F75076B00127E8D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2C017BD21F7506D400127E8D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2C017C041F75077B00127E8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C017BDE1F7506D400127E8D /* Info.plist */,
+				2C017BD61F7506D400127E8D /* Main.storyboard */,
+				2C017BD91F7506D400127E8D /* Assets.xcassets */,
+				2C017BDB1F7506D400127E8D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C017C051F7507AF00127E8D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C0A1F75092900127E8D /* Draw */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2C017C0A1F75092900127E8D /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C0B1F75093800127E8D /* DrawViewController.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		2C017C0F1F75095700127E8D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C101F75097000127E8D /* LetterRecognizer.swift */,
+				2CF3E43D1F752C8B00841FB3 /* Result.swift */,
+				2CDCDB3A1F80DC0000831ECE /* Debouncer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2C017C121F750A2400127E8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C131F750A4300127E8D /* UIImage+Preprocess.swift */,
+				2CF3E43F1F7531D400841FB3 /* UIView+Image.swift */,
+				2CDCDB3D1F80DC2D00831ECE /* UIBezierPath+Scale.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C017C151F750E8100127E8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C017C161F750E8F00127E8D /* CanvasView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CA07A771F78DFCB0057D31C /* SmartKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2CA07A881F78EDA70057D31C /* View */,
+				2CA07A781F78DFCB0057D31C /* KeyboardViewController.swift */,
+				2CA07A7A1F78DFCB0057D31C /* Info.plist */,
+			);
+			path = SmartKeyboard;
+			sourceTree = "<group>";
+		};
+		2CA07A881F78EDA70057D31C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CA07A821F78E0E40057D31C /* SmartKeyboard.xib */,
+				2CA07A861F78ED9F0057D31C /* SmartKeyboard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C017BCE1F7506D400127E8D /* LetterML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C017BF71F7506D400127E8D /* Build configuration list for PBXNativeTarget "LetterML" */;
+			buildPhases = (
+				3D326F0F7F227C3530BD8680 /* [CP] Check Pods Manifest.lock */,
+				2C017BCB1F7506D400127E8D /* Sources */,
+				2C017BCC1F7506D400127E8D /* Frameworks */,
+				2C017BCD1F7506D400127E8D /* Resources */,
+				2CA07A7D1F78DFCB0057D31C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CA07A7C1F78DFCB0057D31C /* PBXTargetDependency */,
+			);
+			name = LetterML;
+			productName = LetterML;
+			productReference = 2C017BCF1F7506D400127E8D /* LetterML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CA07A751F78DFCB0057D31C /* SmartKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA07A811F78DFCB0057D31C /* Build configuration list for PBXNativeTarget "SmartKeyboard" */;
+			buildPhases = (
+				2CA07A721F78DFCB0057D31C /* Sources */,
+				2CA07A731F78DFCB0057D31C /* Frameworks */,
+				2CA07A741F78DFCB0057D31C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartKeyboard;
+			productName = SmartKeyboard;
+			productReference = 2CA07A761F78DFCB0057D31C /* SmartKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C017BC71F7506D400127E8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Filip Gulan";
+				TargetAttributes = {
+					2C017BCE1F7506D400127E8D = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
+					};
+					2CA07A751F78DFCB0057D31C = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C017BCA1F7506D400127E8D /* Build configuration list for PBXProject "LetterML" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C017BC61F7506D400127E8D;
+			productRefGroup = 2C017BD01F7506D400127E8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C017BCE1F7506D400127E8D /* LetterML */,
+				2CA07A751F78DFCB0057D31C /* SmartKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C017BCD1F7506D400127E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C017BDD1F7506D400127E8D /* LaunchScreen.storyboard in Resources */,
+				2C017BDA1F7506D400127E8D /* Assets.xcassets in Resources */,
+				2C017BD81F7506D400127E8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA07A741F78DFCB0057D31C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB7118F1F791DE3003B6E1E /* Assets.xcassets in Resources */,
+				2CA07A831F78E0E40057D31C /* SmartKeyboard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D326F0F7F227C3530BD8680 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetterML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C017BCB1F7506D400127E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDCDB3E1F80DC2D00831ECE /* UIBezierPath+Scale.swift in Sources */,
+				2CF3E43E1F752C8B00841FB3 /* Result.swift in Sources */,
+				2C017C0C1F75093800127E8D /* DrawViewController.swift in Sources */,
+				2CDCDB3B1F80DC0000831ECE /* Debouncer.swift in Sources */,
+				2C017C111F75097000127E8D /* LetterRecognizer.swift in Sources */,
+				2C017C171F750E8F00127E8D /* CanvasView.swift in Sources */,
+				2C017C141F750A4300127E8D /* UIImage+Preprocess.swift in Sources */,
+				2CF3E4401F7531D400841FB3 /* UIView+Image.swift in Sources */,
+				2CD1EC971F7ABE70000ADA2C /* LetterClass_image.mlmodel in Sources */,
+				2C017BD31F7506D400127E8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA07A721F78DFCB0057D31C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDCDB3F1F80DC2D00831ECE /* UIBezierPath+Scale.swift in Sources */,
+				2CA07A8A1F78EECF0057D31C /* Result.swift in Sources */,
+				2CD1EC981F7ABE71000ADA2C /* LetterClass_image.mlmodel in Sources */,
+				2CDCDB3C1F80DC0000831ECE /* Debouncer.swift in Sources */,
+				2CA07A841F78E1400057D31C /* CanvasView.swift in Sources */,
+				2CA07A851F78ECE80057D31C /* UIView+Image.swift in Sources */,
+				2CA07A8B1F78EF4E0057D31C /* UIImage+Preprocess.swift in Sources */,
+				2CA07A871F78ED9F0057D31C /* SmartKeyboard.swift in Sources */,
+				2CA07A791F78DFCB0057D31C /* KeyboardViewController.swift in Sources */,
+				2CA07A891F78EEAA0057D31C /* LetterRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CA07A7C1F78DFCB0057D31C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CA07A751F78DFCB0057D31C /* SmartKeyboard */;
+			targetProxy = 2CA07A7B1F78DFCB0057D31C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C017BD61F7506D400127E8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C017BD71F7506D400127E8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C017BDB1F7506D400127E8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C017BDC1F7506D400127E8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C017BF51F7506D400127E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C017BF61F7506D400127E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C017BF81F7506D400127E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5631E77E59B7C1ED502E2C /* Pods-LetterML.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F5M64F878;
+				INFOPLIST_FILE = "$(SRCROOT)/LetterML/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.infinum.fgulan.letter-ml";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C017BF91F7506D400127E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 046E2B751440BB08A79238F9 /* Pods-LetterML.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F5M64F878;
+				INFOPLIST_FILE = "$(SRCROOT)/LetterML/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.infinum.fgulan.letter-ml";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CA07A7F1F78DFCB0057D31C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F5M64F878;
+				INFOPLIST_FILE = SmartKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.infinum.fgulan.letter-ml.SmartKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CA07A801F78DFCB0057D31C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F5M64F878;
+				INFOPLIST_FILE = SmartKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.infinum.fgulan.letter-ml.SmartKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C017BCA1F7506D400127E8D /* Build configuration list for PBXProject "LetterML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C017BF51F7506D400127E8D /* Debug */,
+				2C017BF61F7506D400127E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C017BF71F7506D400127E8D /* Build configuration list for PBXNativeTarget "LetterML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C017BF81F7506D400127E8D /* Debug */,
+				2C017BF91F7506D400127E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA07A811F78DFCB0057D31C /* Build configuration list for PBXNativeTarget "SmartKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA07A7F1F78DFCB0057D31C /* Debug */,
+				2CA07A801F78DFCB0057D31C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C017BC71F7506D400127E8D /* Project object */;
+}
